@@ -2,14 +2,16 @@
   "name": "ryatek-nodered",
   "version": "1.0.0",
   "description": "Node-Red",
-  "main": "upper-case.js",
+  "main": "none",
   "keywords": [
     "node-red",
-    "uppercase"
+    "uppercase",
+    "lowercase"
   ],
   "node-red": {
     "nodes": {
-      "upper-case": "upper-case.js"
+      "upper-case": "upper-case.js",
+      "lower-case": "lower-case.js"
     }
   },
   "scripts": {
@@ -19,7 +21,7 @@
     "type": "git",
     "url": "git+https://github.com/i5tong/ryatek-nodered.git"
   },
-  "author": "i5tong",
+  "author": "itong",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/i5tong/ryatek-nodered/issues"
