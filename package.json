@@ -1,7 +1,7 @@
 {
-  "name": "ryatek-nodered",
+  "name": "node-red-contrib-ryatek",
   "version": "1.0.0",
-  "description": "Node-Red",
+  "description": "Ryatek Node Red",
   "main": "none",
   "keywords": [
     "node-red",
