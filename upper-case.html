@@ -1,6 +1,7 @@
+<!--定义节点-->
 <script type="text/javascript">
   RED.nodes.registerType('upper-case',{
-    category: 'function',
+    category: 'ryatek',
     color: '#a6bbcf',
     defaults: {
       name: {value:""}
@@ -9,11 +10,12 @@
     outputs:1,
     icon: "file.png",
     label: function() {
-      return this.name||"upper-case";
+      return this.name||"uppercase";
     }
   });
 </script>
 
+<!--编辑对话框 data-template-name-->
 <script type="text/x-red" data-template-name="upper-case">
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> Name</label>
@@ -21,6 +23,7 @@
     </div>
 </script>
 
+<!--帮助信息 data-help-name-->
 <script type="text/x-red" data-help-name="upper-case">
     <p>A simple node that converts the message payloads into all upper-case characters</p>
 </script>
