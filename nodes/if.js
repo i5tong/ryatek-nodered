@@ -8,9 +8,9 @@ module.exports = function (RED) {
                 if (msg.topic === config.topic) {
                     this.state = Boolean(msg.payload);
                     if (this.state) {
-                        this.status({fill: 'blue', shape: 'dot', text: 'true'});
+                        this.status({fill: 'green', shape: 'dot', text: 'true'});
                     } else {
-                        this.status({fill: 'grey', shape: 'ring', text: 'false'});
+                        this.status({fill: 'red', shape: 'ring', text: 'false'});
                     }
                 } else if (this.state) {
                     this.send([msg, null]);
